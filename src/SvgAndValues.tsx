@@ -92,6 +92,13 @@ export const SvgAndValues = () => {
                 <div className="progressRateContainer" key={animationKey}>
                     <div className="donutChartContainer">
                         <div className="donutCart">
+                            <div className="rateContainer">
+                                <p className="rateTitle">Progress</p>
+                                <div className="rateValueContainer">
+                                    <motion.div className="rateValue">{rate}</motion.div>
+                                    <div className="rateUnit">%</div>
+                                </div>
+                            </div>
                             <motion.svg
                                 width="158"
                                 height="158"
@@ -113,34 +120,26 @@ export const SvgAndValues = () => {
                                 variants={drawPathVariants}
                                 />
                             </motion.svg>
-
-                            <div className="rateContainer">
-                                <p className="rateTitle">Progress</p>
-                                <div className="rateValueContairer">
-                                    <motion.div className="rateValue">{rate}</motion.div>
-                                    <div className="rateUnit">%</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div className="dateContainer">
-                        <div className="dateItem">
-                            <p className="dateItemTitle">Not Started</p>
-                            <p className="dateItemValue">
+                    <div className="dataContainer">
+                        <div className="dataItem">
+                            <p className="dataItemTitle">Not Started</p>
+                            <p className="dataItemValue">
                                 <motion.span className="dateItemValueNumber">{notStartedCount}</motion.span>
                                 <span className="dateItemValueUnit">/256</span>
                             </p>
                         </div>
-                        <div className="dateItem">
+                        <div className="dataItem">
                             <p className="dataItemTitle">In Progress</p>
                             <p className="dataItemValue">
                                 <motion.span className="dateItemValueNumber">{inProgressCount}</motion.span>
                                 <span className="dateItemValueUnit">/256</span>
                             </p>
                         </div>
-                        <div className="dateItem">
-                            <p className="dateItemTitle">Completed</p>
-                            <p className="dateItemValue">
+                        <div className="dataItem">
+                            <p className="dataItemTitle">Completed</p>
+                            <p className="dataItemValue">
                                 <motion.span className="dateItemValueNumber">{completedCount}</motion.span>
                                 <span className="dateItemValueUnit">/256</span>
                             </p>

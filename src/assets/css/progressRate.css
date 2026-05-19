@@ -5,20 +5,32 @@
   gap: 40px;
   align-items: center;
 }
-.donutChart {
+
+.donutChartContainer {
   position: relative;
   width: 158px;
   height: 158px;
 }
 
+.donutCart {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .rateContainer {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 60px;
   height: 56px;
   font-weight: bold;
   text-align: center;
+  z-index: 1;
 }
 
 .rateValueContainer {
@@ -61,11 +73,16 @@
   font-size: 18px;
 }
 
-.dataItemValueNumber {
+.dataItemValue {
+  display: flex;
+  align-items: baseline;
+}
+
+.dateItemValueNumber {
   font-size: 28px;
   margin-right: 4px;
 }
 
-.dataItemValueUnit {
+.dateItemValueUnit {
   font-size: 15px;
 }
