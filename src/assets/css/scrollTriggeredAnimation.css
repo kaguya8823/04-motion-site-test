@@ -1,0 +1,79 @@
+.listContainer {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 0.3fr 2fr 1fr 1.2fr;
+  height: 40vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.listHeader {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: span 4;
+  border-bottom: 1px solid var(--color-border);
+  padding: 8px 0;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.listHeaderIndex {
+  text-align: center;
+  font-weight: bold;
+}
+
+.listHeaderName {
+  font-weight: bold;
+}
+
+.listHeaderTerm {
+  font-weight: bold;
+}
+
+.listHeaderParty {
+  font-weight: bold;
+}
+
+.listItems {
+  display: contents;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: span 4;
+  list-style: none;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-border);
+  &:last-child {
+    border-bottom: none;
+  }
+  &:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+}
+
+.listItemIndex {
+  text-align: center;
+}
+
+.listItemName {
+  font-weight: bold;
+}
+
+.listItemTerm {
+  font-size: 14px;
+  color: var(--color-secondary);
+}
+
+.listItemParty {
+  font-size: 14px;
+  color: var(--color-secondary);
+}
+
+.resetButton {
+  margin-top: 40px;
+}

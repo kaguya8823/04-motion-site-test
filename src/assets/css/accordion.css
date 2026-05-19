@@ -1,0 +1,35 @@
+.accordion {
+  border-bottom: 1px solid var(--color-border);
+}
+.accordionSummary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  padding: 24px 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-border);
+  font-size: 18px;
+  font-weight: bold;
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.accordionIcon {
+  position: absolute;
+  width: 15px;
+  right: 16px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.accordionContent {
+  overflow: hidden;
+}
+
+.accordionText {
+  padding: 0px 16px 24px;
+  line-height: 1.5;
+}

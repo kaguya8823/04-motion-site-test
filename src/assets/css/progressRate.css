@@ -1,0 +1,71 @@
+.progressRateContainer {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.donutChart {
+  position: relative;
+  width: 158px;
+  height: 158px;
+}
+
+.rateContainer {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 60px;
+  height: 56px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rateValueContainer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.rateTitle {
+  font-size: 13px;
+}
+
+.rateValue {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.rateUnit {
+  font-size: 16px;
+  line-height: 1;
+  margin-right: -4px;
+}
+
+.dataContainer {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-weight: bold;
+}
+
+.dataItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 12px;
+}
+
+.dataItemTitle {
+  font-size: 18px;
+}
+
+.dataItemValueNumber {
+  font-size: 28px;
+  margin-right: 4px;
+}
+
+.dataItemValueUnit {
+  font-size: 15px;
+}

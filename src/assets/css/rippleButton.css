@@ -1,0 +1,28 @@
+.rippleButton {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.rippleWrapperElement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.rippleEffectElement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.15);
+  filter: blur(10px);
+  pointer-events: none;
+}
